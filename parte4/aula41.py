@@ -1,5 +1,5 @@
 """
-    comportamento de geradores e ieradores
+comportamento de geradores e ieradores
 """
 
 from operator import le

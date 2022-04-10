@@ -1,6 +1,6 @@
 """
-    Zip - Unindo iteráveis
-    Zip_longest - itertools
+Zip - Unindo iteráveis
+Zip_longest - itertools
 """
 from itertools import zip_longest, count
 

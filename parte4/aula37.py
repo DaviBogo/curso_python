@@ -1,9 +1,9 @@
 """
-    add (adiciona), update (atualiza), clear, discard
-    union | (une)
-    intersection & (todos os elementos presentes nos dois sets)
-    difference - (elementos apenas do set da esquerda)
-    symmetric_difference ^ (elementos que estão nos dois sets, mas não em ambos)
+add (adiciona), update (atualiza), clear, discard
+union | (une)
+intersection & (todos os elementos presentes nos dois sets)
+difference - (elementos apenas do set da esquerda)
+symmetric_difference ^ (elementos que estão nos dois sets, mas não em ambos)
 """
 
 # Iterando um set

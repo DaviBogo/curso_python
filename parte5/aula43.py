@@ -1,5 +1,5 @@
 """
-    count - itertools
+count - itertools
 """
 from itertools import count
 

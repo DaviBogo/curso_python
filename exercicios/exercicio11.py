@@ -1,6 +1,6 @@
 """
-    Utilizando List Comprehension, faça com que uma lista de tuplas contendo nome do produto e preço
-    tenha os seus preços somados e retornador no final.
+Utilizando List Comprehension, faça com que uma lista de tuplas contendo nome do produto e preço
+tenha os seus preços somados e retornador no final.
 """
 
 carrinho = []

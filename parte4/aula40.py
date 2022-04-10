@@ -1,5 +1,5 @@
 """
-    iteráveis, iteradores e geradores
+iteráveis, iteradores e geradores
 """
 import sys
 import time
