@@ -19,5 +19,47 @@ Válido
 
 Recap.
 543298765432  -> Primeiro digito
-6543298765432 -> Segunro digito
+6543298765432 -> Segundo digito
 """
+
+list1 = [5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
+list2 = [6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
+
+
+def get_cnpj_numeric_list(cnpj):
+    return [int(s) for s in cnpj if s.isnumeric()]
+
+
+def get_cnpj_next_number(numbers_cnpj, comparable_list):
+    sum = 0
+    for i in range(len(comparable_list)):
+        sum += numbers_cnpj[i] * comparable_list[i]
+
+    return 0 if (11 - (sum % 11)) > 9 else (11 - (sum % 11))
+
+
+if __name__ == '__main__':
+
+    while True:
+
+        cnpj = input('Digite um cnpj para validar, ou "sair" para sair: ')
+
+        if cnpj == 'sair':
+            break
+
+        try:
+            numbers_cnpj = get_cnpj_numeric_list(cnpj[:-2])
+
+            numbers_cnpj.append(
+                get_cnpj_next_number(numbers_cnpj, list1))
+
+            numbers_cnpj.append(
+                get_cnpj_next_number(numbers_cnpj, list2))
+
+            if numbers_cnpj == get_cnpj_numeric_list(cnpj):
+                print('CNPJ válido')
+            else:
+                raise Exception()
+                
+        except Exception:
+            print('CPNJ inválido.')
